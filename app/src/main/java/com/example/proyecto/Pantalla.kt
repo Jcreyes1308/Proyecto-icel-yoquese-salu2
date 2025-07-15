@@ -2,9 +2,16 @@ package com.example.proyecto
 
 /**
  * Pantallas disponibles en la app.
- * Navegamos simplemente cambiando el estado actual, sin librerías externas.
+ * Agregamos más pantallas para cada funcionalidad.
  */
 enum class Pantalla {
     HOME,
-    CONTACTO
+    CONTACTO,
+    SERVICIOS_FUNERARIOS,
+    ENVIO_FLORES,
+    APOYO_EMOCIONAL,
+    DESCARGAR_DATOS,
+    ESCANEAR_QR,
+    BUSCAR_DIFUNTOS,
+    FECHAS_IMPORTANTES
 }

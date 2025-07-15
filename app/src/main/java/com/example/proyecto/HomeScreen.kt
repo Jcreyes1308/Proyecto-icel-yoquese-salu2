@@ -2,7 +2,6 @@ package com.example.proyecto
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Divider
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -12,21 +11,20 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 /**
- * Pantalla principal (HOME) que muestra el logo, botones y footer.
+ * Pantalla principal (HOME) que muestra el logo, los botones y el footer.
+ * ⬅️  Recibe un callback por cada botón que abre otra pantalla.
  */
 @Composable
 fun HomeScreen(
-    onNavigateContacto: () -> Unit
+    onNavigateContacto: () -> Unit,
+    onNavigateApoyoEmocional: () -> Unit
 ) {
     Box(
         modifier = Modifier
             .fillMaxSize()
             .background(
-                brush = Brush.verticalGradient(
-                    colors = listOf(
-                        Color(0xFF3E1F27),
-                        Color(0xFF1E1E1E)
-                    )
+                Brush.verticalGradient(
+                    listOf(Color(0xFF3E1F27), Color(0xFF1E1E1E))
                 )
             )
             .padding(8.dp)
@@ -43,7 +41,10 @@ fun HomeScreen(
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            ButtonGrid(onNavigateContacto = onNavigateContacto)
+            ButtonGrid(
+                onNavigateContacto = onNavigateContacto,
+                onNavigateApoyoEmocional = onNavigateApoyoEmocional
+            )
 
             FooterBar()
         }

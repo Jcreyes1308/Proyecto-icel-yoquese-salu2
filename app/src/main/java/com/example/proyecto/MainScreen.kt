@@ -12,7 +12,14 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun MainScreen(
-    onNavigateContacto: () -> Unit // Importante pasar este callback porque ButtonGrid lo usa
+    onNavigateContacto: () -> Unit,
+    onNavigateServicios: () -> Unit,
+    onNavigateFlores: () -> Unit,
+    onNavigateApoyo: () -> Unit,
+    onNavigateDescargar: () -> Unit,
+    onNavigateQR: () -> Unit,
+    onNavigateBuscar: () -> Unit,
+    onNavigateFechas: () -> Unit
 ) {
     Box(
         modifier = Modifier
@@ -21,26 +28,48 @@ fun MainScreen(
                 brush = Brush.verticalGradient(
                     colors = listOf(
                         Color(0xFF3E1F27),
+                        Color(0xFF2C1B1F),
                         Color(0xFF1E1E1E)
                     )
                 )
             )
-            .padding(8.dp)
     ) {
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.SpaceBetween
         ) {
-            AppTopBar()
+            // Top bar con funcionalidad
+            AppTopBar(
+                onNavigateQR = onNavigateQR,
+                onNavigateBuscar = onNavigateBuscar,
+                onNavigateFechas = onNavigateFechas
+            )
 
-            Divider(color = Color.Gray, thickness = 1.dp)
+            Divider(
+                color = Color.Gray.copy(alpha = 0.5f),
+                thickness = 1.dp,
+                modifier = Modifier.padding(horizontal = 16.dp)
+            )
 
+            // Logo del cementerio
             CementeryLogo()
 
-            Spacer(modifier = Modifier.height(12.dp))
+            // Espaciador
+            Spacer(modifier = Modifier.height(16.dp))
 
-            ButtonGrid(onNavigateContacto = onNavigateContacto) // Pasa el callback
+            // Grid de botones principales
+            ButtonGrid(
+                onNavigateContacto = onNavigateContacto,
+                onNavigateServicios = onNavigateServicios,
+                onNavigateFlores = onNavigateFlores,
+                onNavigateApoyo = onNavigateApoyo,
+                onNavigateDescargar = onNavigateDescargar
+            )
 
+            // Espaciador
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // Footer
             FooterBar()
         }
     }
