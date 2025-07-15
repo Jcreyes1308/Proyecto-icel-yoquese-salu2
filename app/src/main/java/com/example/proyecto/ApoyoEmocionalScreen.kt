@@ -40,11 +40,11 @@ fun ApoyoEmocionalScreen(onBack: () -> Unit) {
                 .padding(16.dp)
         ) {
             Text(
-                "Aquí puedes poner textos, rezos, o recursos de apoyo emocional.",
+                "Aquí ps pongo rezos yoquese, o frases mamadoras para que suban a sus historias",
                 color = Color.White,
                 style = MaterialTheme.typography.bodyLarge
             )
-            // Aquí puedes agregar más contenido luego
+            // Aquí se puede meter mas contenido creo ps
         }
     }
 }

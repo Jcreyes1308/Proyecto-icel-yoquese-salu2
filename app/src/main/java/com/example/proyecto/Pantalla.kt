@@ -2,7 +2,7 @@ package com.example.proyecto
 
 /**
  * Pantallas disponibles en la app.
- * Agregamos más pantallas para cada funcionalidad.
+ * se agregan más pantallas para cada funcionalidad.
  */
 enum class Pantalla {
     HOME,

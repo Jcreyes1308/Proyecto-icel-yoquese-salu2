@@ -125,7 +125,6 @@ fun BuscarDifuntosScreen(onBack: () -> Unit) {
                             Divider(color = Color.Gray)
 
                             if (searchText.isNotBlank()) {
-                                // Ejemplo de resultado
                                 Card(
                                     modifier = Modifier.fillMaxWidth(),
                                     colors = CardDefaults.cardColors(

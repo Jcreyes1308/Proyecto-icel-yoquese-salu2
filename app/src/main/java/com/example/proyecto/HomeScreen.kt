@@ -12,12 +12,15 @@ import androidx.compose.ui.unit.dp
 
 /**
  * Pantalla principal (HOME) que muestra el logo, los botones y el footer.
- * ⬅️  Recibe un callback por cada botón que abre otra pantalla.
+ * Recibe un callback por cada botón que abre otra pantalla.
  */
 @Composable
 fun HomeScreen(
     onNavigateContacto: () -> Unit,
-    onNavigateApoyoEmocional: () -> Unit
+    onNavigateApoyo: () -> Unit,
+    onNavigateDescargar: () -> Unit,
+    onNavigateFlores: () -> Unit,
+    onNavigateServicios: () -> Unit
 ) {
     Box(
         modifier = Modifier
@@ -43,7 +46,10 @@ fun HomeScreen(
 
             ButtonGrid(
                 onNavigateContacto = onNavigateContacto,
-                onNavigateApoyoEmocional = onNavigateApoyoEmocional
+                onNavigateApoyo = onNavigateApoyo,
+                onNavigateDescargar = onNavigateDescargar,
+                onNavigateFlores = onNavigateFlores,
+                onNavigateServicios = onNavigateServicios
             )
 
             FooterBar()

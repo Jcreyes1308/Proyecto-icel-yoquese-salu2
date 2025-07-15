@@ -65,7 +65,7 @@ fun ContactoScreen(onBack: () -> Unit) {
                     )
                     Divider(color = Color.Gray)
                     Text("Correo:", style = MaterialTheme.typography.bodyLarge, color = Color.LightGray)
-                    Text("soporte@miapp.com", style = MaterialTheme.typography.bodyMedium, color = Color.White)
+                    Text("soporte@funeraria.com o yoquese", style = MaterialTheme.typography.bodyMedium, color = Color.White)
                     Spacer(modifier = Modifier.height(8.dp))
                     Text("Teléfono:", style = MaterialTheme.typography.bodyLarge, color = Color.LightGray)
                     Text("+52 55 1234‑5678", style = MaterialTheme.typography.bodyMedium, color = Color.White)

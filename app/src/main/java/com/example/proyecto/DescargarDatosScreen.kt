@@ -76,7 +76,7 @@ fun DescargarDatosScreen(onBack: () -> Unit) {
                     )
 
                     Text(
-                        text = "Esta función estará disponible en futuras versiones de la aplicación.",
+                        text = "Esta función estará disponible en futuras versiones de la aplicación (no me da tiempo ps apenas pude con esto).",
                         style = MaterialTheme.typography.bodyMedium,
                         color = Color.White.copy(alpha = 0.8f),
                         textAlign = TextAlign.Center

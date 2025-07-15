@@ -41,7 +41,7 @@ fun AppTopBar(
             )
 
             Text(
-                text = "Cementerio San José",
+                text = "Cementerio Jose-San",
                 color = Color.White,
                 style = MaterialTheme.typography.titleLarge,
                 fontWeight = FontWeight.Bold
