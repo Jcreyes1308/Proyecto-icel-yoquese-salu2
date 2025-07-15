@@ -2,6 +2,7 @@ package com.example.proyecto
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Divider
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -10,9 +11,12 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
+/**
+ * Pantalla principal (HOME) que muestra el logo, botones y footer.
+ */
 @Composable
-fun MainScreen(
-    onNavigateContacto: () -> Unit // Importante pasar este callback porque ButtonGrid lo usa
+fun HomeScreen(
+    onNavigateContacto: () -> Unit
 ) {
     Box(
         modifier = Modifier
@@ -39,7 +43,7 @@ fun MainScreen(
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            ButtonGrid(onNavigateContacto = onNavigateContacto) // Pasa el callback
+            ButtonGrid(onNavigateContacto = onNavigateContacto)
 
             FooterBar()
         }
