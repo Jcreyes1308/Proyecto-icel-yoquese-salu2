@@ -23,10 +23,22 @@ fun ServiciosFunerariosScreen(onBack: () -> Unit) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Servicios Funerarios", fontWeight = FontWeight.Bold) },
+                title = {
+                    Text(
+                        "Servicios Funerarios",
+                        fontWeight = FontWeight.Bold,
+                        color = Color.White
+                    )
+                },
+
                 navigationIcon = {
                     IconButton(onClick = onBack) {
-                        Icon(Icons.Filled.ArrowBack, contentDescription = "Volver")
+                        Icon(
+                            imageVector = Icons.Filled.ArrowBack,
+                            contentDescription = "Volver",
+                            tint = Color.White
+                        )
+
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(
