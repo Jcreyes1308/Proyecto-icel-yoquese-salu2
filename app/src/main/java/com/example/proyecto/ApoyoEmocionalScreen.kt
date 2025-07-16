@@ -40,7 +40,7 @@ fun ApoyoEmocionalScreen(onBack: () -> Unit) {
                 .padding(16.dp)
         ) {
             Text(
-                "Aquí ps pongo rezos yoquese, o frases mamadoras para que suban a sus historias",
+                "Aquí ps pongo rezos yoquese, o frases mamadoras para que suban a sus historias claro k si",
                 color = Color.White,
                 style = MaterialTheme.typography.bodyLarge
             )
